@@ -1,0 +1,40 @@
+p{
+	color:	darkgreen;
+}
+
+.navbar{
+	padding: 1rem;
+	/*Background-color would be here, just don't want to manually remove  bg from navbar*/
+	
+}
+
+/*Will modify the hover later, bootstrap is overriding the modification I'm making on the button*/
+.btn-primary-home:hover{
+	background-color: white;
+	color: black;
+}
+
+.hero-background-img {
+	background-image: url(images/space-out.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 100px;
+	padding-bottom:100px;
+}
+
+.hero-background-img::after{
+	content: "";
+	position: absolute;
+	background-image: url(images/space-out.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom:0;
+	z-index: -1;
+	opacity: 0.5;
+	
+}
